@@ -12,6 +12,7 @@
             --darker: #050505;
             --text: #ffffff;
             --text-muted: #999;
+              cursor: none; 
         }
 
         body {

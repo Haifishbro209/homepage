@@ -44,31 +44,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Form Handling
-document.getElementById('contactForm').addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    const formData = new FormData(this);
-    const data = Object.fromEntries(formData);
-
-    if (!data.email || !data.message) {
-        alert('Bitte fülle alle Pflichtfelder aus! 🔥');
-        return;
-    }
-
-    const submitBtn = this.querySelector('.submit-btn');
-    const originalText = submitBtn.textContent;
-
-    submitBtn.textContent = 'Sending to the Mastermind... 🚀';
-    submitBtn.disabled = true;
-
-    setTimeout(() => {
-        alert('Message sent! Kaloyan wird sich bald bei dir melden! 🔥');
-        this.reset();
-        submitBtn.textContent = originalText;
-        submitBtn.disabled = false;
-    }, 2000);
-});
 
 document.addEventListener('mousemove', (e) => {
     const orbs = document.querySelectorAll('.floating-orb');
