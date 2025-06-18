@@ -76,7 +76,7 @@ setInterval(() => {
 document.querySelectorAll('.project-card').forEach(card => {
     card.addEventListener('mouseenter', function () {
         this.style.transform = 'translateY(-20px) rotateX(5deg)';
-        this.style.boxShadow = '0 30px 60px rgba(0, 255, 136, 0.2)';
+        this.style.boxShadow = '0 30px 60px rgba(74, 145, 226, 0.55)';
     });
 
     card.addEventListener('mouseleave', function () {
